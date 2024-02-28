@@ -1,5 +1,6 @@
 <script>
     import "../app.css";
+    import { fade } from "svelte/transition";
 
     // Assuming you have 30 images named sequentially like page1.jpg, page2.jpg, etc.
     const images = Array.from({ length: 6 }).map(
@@ -70,7 +71,7 @@
             : images.length + 1}
     >
         {#if parted}
-            <p class="text">
+            <p class="text" in:fade={{ duration: 500 }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
