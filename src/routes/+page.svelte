@@ -53,7 +53,11 @@
 
 <header class="site-title">
     Meta-DAO Book
-    <button on:click={toggleParting} class="part-button improved-part-button">
+    <button
+        on:click={toggleParting}
+        class:toggled={parted}
+        class="part-button improved-part-button"
+    >
         {parted ? "Close Text" : "View Text"}
     </button>
 </header>
@@ -310,10 +314,13 @@
         display: flex; /* Aligns title and button in the same row */
         justify-content: space-between; /* Separates title and button */
         align-items: center; /* Centers items vertically */
-        font-size: 24px; /* Adjust as needed */
-        color: #fff; /* Adjust as needed */
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* Your specified font family */
+        font-weight: bold; /* Makes the text bolder */
+        text-transform: uppercase; /* Optional: Makes the text all uppercase for "better" look */
+
+        font-size: 36px; /* Makes the text bigger */
+        color: #fc4949; /* Adjust as needed */
+        font-family: "Arial", sans-serif; /* Change the font-family to something "better" as per your preference */
+
         z-index: 1010; /* Ensures visibility over other elements */
     }
 
@@ -325,10 +332,26 @@
         border-radius: 5px; /* Rounded corners for a modern look */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
         font-weight: bold; /* Makes the button text stand out */
+        font-size: 16px; /* Makes the text bigger */
+        transition: background-color 0.3s ease;
+
         cursor: pointer; /* Changes cursor to pointer on hover over button */
+        font-family: "Arial", sans-serif; /* Change the font-family to something "better" as per your preference */
     }
 
     .improved-part-button:hover {
         background-color: #fc4949; /* Color change on hover for interactive feel */
+    }
+
+    .improved-part-button:hover,
+    .improved-part-button.toggled,
+    .improved-part-button.toggled:hover {
+        background-color: #fc4949; /* Red background */
+        color: #fff; /* White text for better contrast */
+    }
+
+    .improved-part-button.toggled:hover {
+        background-color: #007bff; /* Blue background */
+        color: #fff; /* Adjust text color as needed */
     }
 </style>
