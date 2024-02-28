@@ -1,6 +1,7 @@
 <script>
     import "../app.css";
     import { fade } from "svelte/transition";
+    import { onMount } from "svelte";
 
     // Assuming you have 30 images named sequentially like page1.jpg, page2.jpg, etc.
     const images = Array.from({ length: 6 }).map(
@@ -50,6 +51,29 @@
             }
         });
     }
+
+    onMount(() => {
+        // Place any code here that needs to access `window` or other browser-only globals
+        function adjustForWindowSize() {
+            if (window.innerWidth < 1100) {
+                if (parted) {
+                    // Check if parted is true before toggling
+                    toggleParting();
+                }
+            }
+        }
+
+        // Add event listener for window resize
+        window.addEventListener("resize", adjustForWindowSize);
+
+        // Call adjustForWindowSize on initial load to ensure proper state
+        adjustForWindowSize();
+
+        // Optional: return a cleanup function to remove the event listener
+        return () => {
+            window.removeEventListener("resize", adjustForWindowSize);
+        };
+    });
 </script>
 
 <header class="site-title">
@@ -62,6 +86,10 @@
         {parted ? "Close Text" : "View Text"}
     </button>
 </header>
+
+<div class="viewing-experience-message">
+    For the best viewing experience, please use a larger screen.
+</div>
 
 <div class="gallery">
     <div
@@ -186,6 +214,8 @@
 
     .gallery {
         display: flex;
+        overflow: hidden; /* This will cut off any part of the content that exceeds the gallery bounds */
+
         flex-wrap: wrap;
         justify-content: center; /* Centers items in the main axis */
         gap: 1rem; /* Constant gap between items */
@@ -227,7 +257,7 @@
         transition: order 2s ease;
         position: absolute; /* Absolute position for the text */
         margin-top: 40px;
-        width: 500px; /* The text should span the entire width of the gallery */
+        max-width: 500px; /* The text should span the entire width of the gallery */
         height: 100%; /* The text should span the entire height of the gallery, if needed */
         /* display: flex; */
         justify-content: center;
@@ -354,5 +384,36 @@
     .improved-part-button.toggled:hover {
         background-color: #007bff; /* Blue background */
         color: #fff; /* Adjust text color as needed */
+    }
+
+    .viewing-experience-message {
+        display: none; /* Hide by default */
+        text-align: center;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        border-radius: 5px;
+        font-size: 1rem;
+        position: fixed; /* Position the message fixed on the screen */
+        top: 100px; /* Distance from the bottom of the viewport */
+        left: 50%; /* Center the message horizontally */
+        transform: translateX(
+            -50%
+        ); /* Adjust horizontal positioning to truly center */
+        width: calc(
+            100% - 40px
+        ); /* Ensure it doesn't stretch beyond viewport width, considering padding */
+        max-width: 500px; /* Maximum width of the message */
+        z-index: 1000; /* Ensure it's above other content */
+    }
+
+    /* This media query applies styles when the window width is less than 1100 pixels */
+    @media (max-width: 1099px) {
+        .improved-part-button {
+            display: none; /* Hides the button */
+        }
+        .viewing-experience-message {
+            display: block; /* Show only when window width is under 1099px */
+        }
     }
 </style>
