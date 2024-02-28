@@ -415,5 +415,9 @@
         .viewing-experience-message {
             /* display: block; /* Show only when window width is under 1099px */
         }
+
+        .site-title {
+            justify-content: center;
+        }
     }
 </style>
