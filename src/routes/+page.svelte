@@ -413,7 +413,7 @@
             display: none; /* Hides the button */
         }
         .viewing-experience-message {
-            display: block; /* Show only when window width is under 1099px */
+            /* display: block; /* Show only when window width is under 1099px */
         }
     }
 </style>
