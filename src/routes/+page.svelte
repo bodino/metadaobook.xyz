@@ -193,13 +193,25 @@
 </div>
 
 <footer class="site-footer">
-    <a href="your-twitter-link" target="_blank" rel="noopener noreferrer">
+    <a
+        href="https://twitter.com/MetaDAOProject"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
         <i class="fab fa-twitter"></i>
     </a>
-    <a href="your-github-link" target="_blank" rel="noopener noreferrer">
+    <a
+        href="https://github.com/bodino/metadaoxyz"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
         <i class="fab fa-github"></i>
     </a>
-    <a href="your-website-link" target="_blank" rel="noopener noreferrer">
+    <a
+        href="https://app.themetadao.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
         <i class="fas fa-globe"></i>
         <!-- You can replace this with a custom icon if needed -->
     </a>
@@ -280,23 +292,6 @@
         backface-visibility: hidden; /* Prevents flickering on rotation */
     }
 
-    .site-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .site-footer a {
-        color: #49a3fc; /* Twitter blue color, change it to match your design */
-        font-size: 2rem; /* Icon size, adjust as needed */
-        transition: color 0.3s ease;
-    }
-
-    .site-footer a:hover {
-        color: #fc4949; /* Lighter blue for hover effect, adjust as needed */
-    }
-
     /* If you have a specific custom icon for the website, use this */
     .custom-website-icon {
         font-size: 0; /* Hide the text for screen readers */
@@ -309,22 +304,26 @@
     }
 
     .site-footer {
-        position: fixed; /* Fixed position to keep footer at the bottom */
-        bottom: 10px; /* Aligns the footer at the bottom */
-        left: 0; /* Aligns the footer to the left */
-        width: 100%; /* Ensures the footer extends across the full width of the viewport */
+        position: fixed;
+        bottom: 10px;
+        left: 50%; /* Adjust to center the footer */
+        transform: translateX(-50%); /* Centers the footer horizontally */
         display: flex;
-        justify-content: center; /* Centers the icons horizontally */
-        align-items: center; /* Centers the icons vertically */
-        gap: 20px; /* Adjust the space between icons as needed */
-        padding: 10px 0; /* Adds some padding above and below the icons */
-        background: transparent; /* No background for a floating effect */
-        z-index: 1000; /* Ensures the footer is above other content */
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 8px 20px; /* Adjusted padding for pill shape */
+        background-color: #201f23; /* Adds the black pill-shaped background */
+        border-radius: 50px; /* Adjust as needed to fine-tune the pill shape */
+        z-index: 1000;
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Adds shadow for depth */
+        color: #fc4949; /* Keeps your specified icon color */
     }
 
     .site-footer a {
-        color: inherit; /* Inherits the color from the parent or you can set a specific color */
-        text-decoration: none; /* Removes underline from links */
+        color: #fc4949; /* Ensures link color matches your design */
+        font-size: 2rem; /* Maintains icon size */
+        transition: color 0.3s ease;
     }
 
     .site-footer i {
@@ -334,6 +333,7 @@
 
     .site-footer i:hover {
         transform: scale(1.1); /* Slightly enlarges the icon on hover */
+        color: #49a3fc; /* Lighter blue for hover effect, adjust as needed */
     }
 
     /* Title styling */
