@@ -7,7 +7,7 @@
     let images = Array.from({ length: 32 }).map((_, index) => ({
         id: index + 1,
         image: `/page${index + 1}.png`,
-        placeholder: `/placeholder/page${index + 1}.jpg`, // Add a placeholder property
+        placeholder: `/placeholder/page${index + 1}.png`, // Add a placeholder property
         flipped: false,
     }));
 
@@ -226,11 +226,11 @@
             on:mouseleave={handleMouseLeave}
         >
             <img
+                class="img"
                 use:lazyLoad={{
                     src: image.image,
                     placeholder: image.placeholder,
                 }}
-                alt={`Page ${index + 1}`}
                 draggable="false"
             />
         </div>
@@ -293,6 +293,10 @@
         justify-content: center; /* Center the image within the card */
         align-items: center; /* Align the image vertically within the card */
         margin: 0.5rem; /* Half of the gap on all sides */
+        max-width: 517px;
+        width: 517px;
+        height: 640px;
+        object-fit: cover;
     }
 
     .image-card:hover {
@@ -328,9 +332,11 @@
         color: antiquewhite;
     }
 
-    img {
+    .img {
         max-height: 40rem; /* Adjust based on your images' size */
-        height: auto;
+        height: 100%;
+        object-fit: cover;
+
         width: auto; /* Ensure the width is adjusted along with the height */
         max-width: 100%; /* Ensures the image doesn't exceed the card size */
         display: block; /* Ensures img element doesn't add extra space below */
