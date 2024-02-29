@@ -477,6 +477,6 @@
     }
 
     .image-card.flipped {
-        transform: rotateY(180deg);
+        /* transform: rotateY(180deg); */
     }
 </style>
