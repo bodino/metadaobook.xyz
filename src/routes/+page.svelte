@@ -117,7 +117,7 @@
         class:toggled={parted}
         class="part-button improved-part-button"
     >
-        {parted ? "Close Text" : "View Text"}
+        {parted ? "Close the Curtains" : "See the light"}
     </button>
 </header>
 
@@ -344,14 +344,18 @@
 
         justify-content: center;
         align-items: center;
-        color: antiquewhite; /* Makes text color white */
+        color: #faf4eb; /* Makes text color white */
     }
 
-    .text-center h2,
+    .text-center h2 {
+        font-size: 34px; /* Adjusted font size for h2 */
+        margin-top: 20px; /* Keeps spacing above headings */
+    }
+
     .text-center h3 {
-        font-size: 30px; /* Larger font size for headings */
-        margin-top: 20px; /* Adds spacing above headings */
-        color: #49a3fc;
+        font-size: 30px; /* Smaller font size for h3 */
+        margin-top: 20px; /* Keeps spacing above headings */
+        font-style: italic; /* Italics for h3 */
     }
 
     .text-center p {
@@ -361,7 +365,7 @@
     .text {
         transition: order 2s ease;
         font-size: 25px;
-        color: antiquewhite;
+        /* color: #faf4eb; */
     }
 
     .img {
