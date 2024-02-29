@@ -208,16 +208,13 @@
                 on Xxyz happening, I think my tokens will go up 65% in value”.
             </p>
 
-            <h3>
-                individual accountability > tragedy of the commons in coin
-                voting
-            </h3>
+            <h3>The Mechanics of Decision Markets</h3>
             <p>
-                Under futarchy, anyone involved in governance faces immediate
-                accountability. Not only will policy changes affect the value of
-                the tokens they hold, like they normally do, but they will also
-                immediately win or lose money after a proposal passes. The
-                feedback loop is tighter.
+                Decision markets under futarchy operate on the premise that the
+                value of a policy can be measured by its impact on token value.
+                This system rewards accurate policy judgment with financial
+                gain, ensuring that only those with genuine insights can
+                influence major decisions.
             </p>
 
             <h3>Accountability and Impact</h3>
@@ -347,7 +344,6 @@
 
         justify-content: center;
         align-items: center;
-        pointer-events: none; /* This ensures clicks pass through to elements below */
         color: antiquewhite; /* Makes text color white */
     }
 
