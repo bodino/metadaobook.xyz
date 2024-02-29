@@ -4,7 +4,7 @@
     import { onMount } from "svelte";
 
     // Assuming you have 30 images named sequentially like page1.jpg, page2.jpg, etc.
-    let images = Array.from({ length: 28 }).map((_, index) => ({
+    let images = Array.from({ length: 32 }).map((_, index) => ({
         id: index + 1,
         image: `/page${index + 1}.png`,
         flipped: false, // Add this line
@@ -24,8 +24,8 @@
         const mouseX = event.clientX - centerX;
         const mouseY = event.clientY - centerY;
 
-        const rotateX = (mouseY / (height / 2)) * -15; // Tilts up or down
-        const rotateY = (mouseX / (width / 2)) * 15; // Tilts left or right
+        const rotateX = (mouseY / (height / 2)) * -5; // Tilts up or down
+        const rotateY = (mouseX / (width / 2)) * 5; // Tilts left or right
 
         // Retrieve the base transform from data attribute or default to empty
         const baseTransform = card.dataset.baseTransform || "";
@@ -107,89 +107,92 @@
     >
         {#if parted}
             <p class="text" in:fade={{ duration: 500 }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Current governance structures are broken. In a country, a
+                politician will run on the policies that are most likely to get
+                him re-elected, not the ones that are truly best for the people
+                he represents. In a company, a manager has little incentive to
+                bet on moonshot product lines that could 10x the value of the
+                company, if it also means he could lose his job. In a DAO,
+                getting people to vote is hard and direct democracy makes for
+                mediocre products. They have been a failure in crypto for the
+                most part. Often, what works best is having a benevolent
+                dictator in charge, where one person makes the final decision,
+                as in many founder-led startups and open source projects. The
+                risk here is that the organization rests on the shoulders of a
+                single person. If the person loses their mind, it's hard for the
+                organization to succeed. Enter Futarchy Markets do a much better
+                job than humans at getting to the most accurate information.
+                Information is decentralized. No expert can hold that much
+                information in his head. It's dispersed across the brains of
+                millions of humans and markets are the mechanism through which
+                that information can be gathered and communicated in one place.
+                This was Friedrich Hayek's brilliant insight. We have proof that
+                markets work in practice, not just theory. Orange futures
+                predict the weather better than forecasters. The Iowa Electronic
+                markets predict the US Presidential elections winner better than
+                polls or political analysts. And Wall Street traders predicted
+                who would be held responsible for the Challenger explosion four
+                months before a presidential committee did. Markets applied to
+                organizations is called futarchy, an idea invented by Robin
+                Hanson in 2000. You can apply market-led governance in anything
+                from small groups of people to public companies and governments.
+                You just need an agreed upon desired outcome and a metric that
+                represents that outcome. An example would be wealth and GDP for
+                countries. I'll use an experimental new project called Meta-DAO
+                to show how decision markets work. MetaDAO's goal is to increase
+                the value of the project. A investment fund comes along and puts
+                up a proposal to acquire $10,000 worth of the native token,
+                $META. Alongside the capital, the fund offers MetaDAO
+                legitimacy, attracting more attention to the project. The
+                proposal gains enough traction and a market is created. There
+                are two options: pass or fail. Market participants have five
+                days to trade to signal their decision whether the fund adds
+                enough value to the project to warrant a sweetheart deal on the
+                tokens. At the expire date, the average price across all days is
+                taken. If the pass market is greater than 5 percent of the fail
+                market, the proposal passes. Otherwise it fails. Why now Before
+                a technology is widely adopted, the idea has been around for a
+                long time and it has been tried many times before. Before there
+                was Instacart, there was WebVan. So you have to ask, why
+                futarchy now and why MetaDAO? Past experiments of futarchy have
+                failed because the organization in question didn't start out
+                using markets to make decisions. If you don't start out with
+                markets you are at the mercy of asking humans to act against
+                their own interests. Hanson uses the example of deadlines. Take
+                a manager whose job it is to ship some piece of software on
+                time. If he adds a market to have everyone vote on whether the
+                software will ship on time and the market concludes no, he'll
+                have time to figure out what needs to happen to make sure the
+                team meets the deadline. If he still fails to meet the deadline,
+                he'll have no one to blame. There was nothing that came out of
+                left field. Decision markets make managers look bad. MetaDAO on
+                the otherhand, started making decisions almost right from the
+                outset. It launched on November 8, 2023. After one week, it
+                decentralized. All big decisions from then on would be made
+                using markets. There is no team or foundation token allocation.
+                10,000 $META were distributed to early participants with the
+                remainder going to the DAO's treasury. It's founded by an
+                anonymous character named Prophet and has managed to attract a
+                group of talented free thinkers. Unlike most crypto projects, it
+                plans to create products that generate cash flow. An example of
+                one is a futarchy-as-a-service software product for other DAOs
+                to easily adopt its same governance structure. How to
+                participate With crypto projects, people often think that you
+                have to code to drive the most value. In reality, marketing is
+                just as important as product. If users don't hear about your
+                project, it's as if it didn't exist. Great marketing is the
+                ability to tell a project's story: what it is and where it's
+                going. This can be written content, videos, tweets, even art. If
+                you're not a storyteller, you can trade, code, design, scheme,
+                make deals happen. There's something you're especially suited
+                for, anon. — Thanks to Isaac Yonemoto for reading drafts and
+                giving feedback. E
             </p>
         {/if}
     </div>
     {#each images as image, index (image)}
         <div
-            class={`image-card ${parted ? "parted" : ""} ${image.flipped ? "flipped" : ""} `}
+            class={`image-card ${parted ? "parted" : ""} `}
             style={`order:${index + 1}; `}
             on:click={() => toggleFlip(image)}
             on:mousemove={handleMouseMove}
