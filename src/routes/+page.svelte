@@ -4,9 +4,16 @@
     import { onMount } from "svelte";
 
     // Assuming you have 30 images named sequentially like page1.jpg, page2.jpg, etc.
-    const images = Array.from({ length: 28 }).map(
-        (_, index) => `/page${index + 1}.png`,
-    );
+    let images = Array.from({ length: 28 }).map((_, index) => ({
+        id: index + 1,
+        image: `/page${index + 1}.png`,
+        flipped: false, // Add this line
+    }));
+
+    function toggleFlip(image) {
+        image.flipped = !image.flipped;
+        console.log("flipped ", image);
+    }
 
     // Function to handle the mouse move event
     function handleMouseMove(event) {
@@ -182,12 +189,17 @@
     </div>
     {#each images as image, index (image)}
         <div
-            class={`image-card ${parted ? "parted" : ""}`}
+            class={`image-card ${parted ? "parted" : ""} ${image.flipped ? "flipped" : ""} `}
             style={`order:${index + 1}; `}
+            on:click={() => toggleFlip(image)}
             on:mousemove={handleMouseMove}
             on:mouseleave={handleMouseLeave}
         >
-            <img src={image} alt={`Page ${index + 1}`} draggable="false" />
+            <img
+                src={image.image}
+                alt={`Page ${index + 1}`}
+                draggable="false"
+            />
         </div>
     {/each}
 </div>
@@ -232,7 +244,7 @@
         justify-content: center; /* Centers items in the main axis */
         gap: 1rem; /* Constant gap between items */
         position: relative;
-        padding-top: 50px;
+        padding-top: 100px;
         max-width: 1600px; /* Maximum width of the gallery */
         margin-left: auto; /* Centers the gallery horizontally */
         margin-right: auto; /* Centers the gallery horizontally */
@@ -419,5 +431,9 @@
         .site-title {
             justify-content: center;
         }
+    }
+
+    .image-card.flipped {
+        transform: rotateY(180deg);
     }
 </style>
