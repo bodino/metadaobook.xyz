@@ -4,7 +4,7 @@
     import { onMount } from "svelte";
 
     // Assuming you have 30 images named sequentially like page1.jpg, page2.jpg, etc.
-    const images = Array.from({ length: 6 }).map(
+    const images = Array.from({ length: 28 }).map(
         (_, index) => `/page${index + 1}.png`,
     );
 
