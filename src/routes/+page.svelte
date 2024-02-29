@@ -351,6 +351,7 @@
     .text-center h3 {
         font-size: 30px; /* Larger font size for headings */
         margin-top: 20px; /* Adds spacing above headings */
+        color: #49a3fc;
     }
 
     .text-center p {
