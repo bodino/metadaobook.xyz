@@ -228,7 +228,7 @@
             <img
                 class="img"
                 use:lazyLoad={{
-                    src: image.placeholder,
+                    src: image.image,
                     placeholder: image.placeholder,
                 }}
                 draggable="false"
