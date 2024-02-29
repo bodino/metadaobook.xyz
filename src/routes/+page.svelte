@@ -134,101 +134,130 @@
                 ? Math.floor(images.length / 2) + 1
                 : images.length + 1}
         >
-            <h2>Futarchy: A New Dawn of Decision Making</h2>
+            <h3>~Autocracy~ First, the people had no voice</h3>
             <p>
-                First, there was autocracy. Those in power ruled selfishly to
-                better their own interests, leaving their subjects helpless with
-                no ability to enact any change. The ruling class faced zero
-                accountability for the impact of their decisions on society.
-                Then, there was democracy. For the first time, all members of
-                society were empowered and granted an equal share in the
-                steering of civilization. Yet the arrow of progress went in
-                strange, confusing directions, and everyone held complaints
-                about how so much low-hanging fruit was left unpicked. Why were
-                the decisions being made so stupid? And so the empowered once
-                again became the powerless, subject to a blackboxed emergent
-                process that made decisions at random. They gave up and stopped
-                even trying. Maybe the king was gone, but the tragedy of the
-                commons was now the unofficial one. What difference would one
-                vote make? Crypto foolishly copied this pattern, implementing a
-                system of coin voting even more inefficient than democracy.
+                The dissenters built democracy. They empowered all members of
+                society with a voice. For the first time, everyone held equal
+                access to the steering wheel of civilization. Yet the wheel
+                seemed to turn in random, stupid directions. A million coin
+                voters cried out at once, finally free to speak up with their
+                voice–and all anyone could hear was noise. Those who couldn’t
+                yell loud enough–those without enough coins–were the first to
+                give up, realizing their votes meant nothing on the margin.
+                Society fell to the tragedy of the commons. What could possibly
+                affect society enough to affect me? became an unspoken mind
+                virus. Sometimes they voted carelessly, sometimes they didn’t
+                vote at all. The empowered once again became the powerless.
+                Those same dissenters who yearned for a purer cyberspace set
+                out, hopeless, and they have been stateless since.
             </p>
 
+            <h3>
+                ~Democracy~ Then, the voice of the people became the voice of
+                God
+            </h3>
             <p>
-                In the distance, hope looms: futarchy. What if instead of just
-                static votes, people could provide input with a sliding scale
-                indicating how confident they were and how important they
-                thought something was? Under futarchy, members of society can
-                bet on their beliefs by betting on what they think certain
-                decisions will lead to. Speculative markets powerfully harness
-                the wisdom of society rather than leaving the bulk of it
-                untouched. , Thus, serving as a nexus of all available
-                information and accurately weighing people’s opinions by their
-                profits?how informed they are. People have skin in the game
-                Under futarchy, there are strong incentives to actually predict
-                the future what is going to happen rather than succumbing to
-                biases or bad priors--incentives aligned with the betterment of
-                society. Under futarchy, there is individual accountability:
-                individuals stake their own money on what outcomes will be good,
-                and so the tragedy of the commons is defeated. Under futarchy,
-                there is no dumb decision-making blackbox; it is a highly
-                intelligent egregore fusing together the minds of every member
-                of society. Under futarchy, there is hope.
+                The dissenters built democracy. They empowered all members of
+                society with a voice. For the first time, everyone held equal
+                access to the steering wheel of civilization. Yet the wheel
+                seemed to turn in random, stupid directions. A million coin
+                voters cried out at once, finally free to speak up with their
+                voice–and all anyone could hear was noise. Those who couldn’t
+                yell loud enough–those without enough coins–were the first to
+                give up, realizing their votes meant nothing on the margin.
+                Society fell to the tragedy of the commons. What could possibly
+                affect society enough to affect me? became an unspoken mind
+                virus. Sometimes they voted carelessly, sometimes they didn’t
+                vote at all. The empowered once again became the powerless.
+                Those same dissenters who yearned for a purer cyberspace set
+                out, hopeless, and they have been stateless since.
             </p>
 
-            <h3>Betting: A Tax on Bullshit</h3>
+            <h3>~Futarchy~ Let there be light markets</h3>
             <p>
-                Betting is a tax on bullshit. Who would you trust more:
-                political prediction markets with millions of dollars wagered on
-                who will win the next election, or the political pundit spinning
-                up a narrative on his talk show to the pleasure of his who knows
-                his targeted political audience -and will willing to liesay
-                whatever he can to keep their attention? Markets consistently
-                beat polling and pundits because the bid-ask midpoint of a
-                market is a forecast accurately weighing opinions by conviction
-                and value. And over time, they become even smarter. because Tthe
-                bullshitters lose their money asand the sharps fight to price
-                the market as accurately as possible. The incentives of betting
-                are great: the biases and narratives you might believe in
-                disappear when you’re confronted with the task of betting real
-                money on what you think will actually happen. Prediction markets
-                are good proxies because the value of a share is directly pegged
-                to the likelihood of an event. Decision markets under futarchy
-                work because they’re pegged to the value of the token
-                conditional on a policy change. Just like the incentives of
-                betting, futarchy works because the better you are at judging
-                the impact of policy changes whether policy changes will be
-                good, the more money you make, leading you to have more sway and
-                then the more control you have over future decisions.
-                Furthermore, And when you’re betting real money, you can no
-                longer get away with just having vague thoughts about whether
-                something will be good or bad–you probably wouldn’t want to
-                stake real money on opinions like that anyways. Futarchy
-                replaces “idk I think Xxyz will maybe be good” with “conditional
-                on Xxyz happening, I think my tokens will go up 65% in value”.
+                But now, for the first time in memory, there is hope once again:
+                futarchy. Imagine a democracy built on top of markets. Votes
+                become bets, and bets express predictions about two divergent
+                future worlds: one where a policy is implemented, one where it
+                isn’t. Betting gives people skin in the game. Keeping them
+                individually accountable where they might otherwise dismiss
+                decisions due to not being directly affected. Markets mean
+                everyone is listened to at the volume they speak at. Crucially,
+                futarchic markets must be explicitly tethered to the real world
+                so they accurately reflect what they’re trying to measure.
+                Meta-DAO’s implementation is centered around the price of $META
+                conditional on a proposal passing or failing, in the form of
+                conditional tokens: pMeta and fMeta. The time-weighted average
+                prices (TWAPs) in the two corresponding conditional orderbooks
+                extract invaluable insights from the market. If the Pass TWAP
+                exceeds the Fail’s by 5%, traders have conviction that $META
+                will be more valuable in worlds where the proposal passes.
+                Futarchy wins. Markets powerfully harness the wisdom of the
+                crowds by effectively synthesizing the perspectives and
+                knowledge of the masses, rewarding truth-seeking, and giving
+                participants skin in the game.
             </p>
 
-            <h3>The Mechanics of Decision Markets</h3>
+            <h3>The people have created their God: futarchic markets</h3>
             <p>
-                Decision markets under futarchy operate on the premise that the
-                value of a policy can be measured by its impact on token value.
-                This system rewards accurate policy judgment with financial
-                gain, ensuring that only those with genuine insights can
-                influence major decisions.
+                Futarchy is the best we can do short of figuring out
+                omniscience. Millions of people equals millions of opinions and
+                insights–a ton of them are extremely valuable, but even more are
+                actively a waste of time to listen to. Governance requires
+                listening to the people, but they’ll just give up even if they
+                think they have a lot to contribute if it’s a waste of time for
+                them to participate. With markets, people are rewarded even more
+                if they are right when others are wrong. First, they’ll decide
+                for themselves how valuable they think their opinions are–and
+                over time, as they win or lose money, the market will tell them
+                whether or not they are right. Dumb bettors will pay the
+                bullshit tax and slowly lose all their money as it flows to
+                sharps who seek the truth rather than what they want to be true.
+                The market recursively self-improves and becomes more and more
+                attuned to reality.
             </p>
 
-            <h3>Accountability and Impact</h3>
+            <h3>Betting is a tax on bullshit</h3>
             <p>
-                Futarchy fosters immediate accountability and tightens the
-                feedback loop in governance. It promises a system where
-                individual accountability trumps the tragedy of the commons, and
-                informed decisions shape the future.
+                Futarchy is the best we can do short of figuring out
+                omniscience. Millions of people equals millions of opinions and
+                insights–a ton of them are extremely valuable, but even more are
+                actively a waste of time to listen to. Governance requires
+                listening to the people, but they’ll just give up even if they
+                think they have a lot to contribute if it’s a waste of time for
+                them to participate. With markets, people are rewarded even more
+                if they are right when others are wrong. First, they’ll decide
+                for themselves how valuable they think their opinions are–and
+                over time, as they win or lose money, the market will tell them
+                whether or not they are right. Dumb bettors will pay the
+                bullshit tax and slowly lose all their money as it flows to
+                sharps who seek the truth rather than what they want to be true.
+                The market recursively self-improves and becomes more and more
+                attuned to reality.
             </p>
 
+            <h3>Skin in the game</h3>
             <p>
-                As we stand on the brink of adopting futarchy, it's clear: the
-                path forward is not through louder voices or more votes, but
-                through smarter, more informed decisions that benefit all.
+                Unlike how the tragedy of the commons plagues democratic systems
+                like coin voting because an individual actor may vote in a way
+                that is optimal for them, ignoring what’s best for society
+                because it doesn’t affect them as much, those who choose to
+                become involved in futarchic governance are immediately rewarded
+                or punished. They are held individually accountable rather than
+                just being a small speck in a massive society with merely
+                collective accountability.
+            </p>
+
+            <h3>The people are God. They speak to us through the markets</h3>
+            <p>
+                Today there exists Meta-DAO, an organization which has no bosses
+                or corporate hierarchies. It exists in the truest form of
+                futarchy. It is but a nascent child. But all things start small,
+                before they appear to us as the institutions which are o so
+                important. Meta-DAO is experimenting on the most important part
+                of society: coordination. For that alone its existence is
+                justified. It is a potential future, where we work together
+                better and in a more fair manner.
             </p>
         </div>
     {/if}
