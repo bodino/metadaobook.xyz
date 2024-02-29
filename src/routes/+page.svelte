@@ -7,8 +7,35 @@
     let images = Array.from({ length: 32 }).map((_, index) => ({
         id: index + 1,
         image: `/page${index + 1}.png`,
-        flipped: false, // Add this line
+        placeholder: `/placeholder/page${index + 1}.jpg`, // Add a placeholder property
+        flipped: false,
     }));
+
+    function lazyLoad(node, { src, placeholder }) {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        let img = entry.target;
+                        img.src = src; // Load the actual image
+                        observer.unobserve(img);
+                    }
+                });
+            },
+            {
+                rootMargin: "200px", // Load images a bit before they enter the viewport
+            },
+        );
+
+        node.src = placeholder; // Initially set to load the placeholder
+        observer.observe(node);
+
+        return {
+            destroy() {
+                observer.unobserve(node);
+            },
+        };
+    }
 
     function toggleFlip(image) {
         image.flipped = !image.flipped;
@@ -190,16 +217,19 @@
             </p>
         {/if}
     </div>
-    {#each images as image, index (image)}
+    {#each images as image, index (image.id)}
         <div
-            class={`image-card ${parted ? "parted" : ""} `}
-            style={`order:${index + 1}; `}
+            class={`image-card ${image.flipped ? "flipped" : ""} ${parted ? "parted" : ""}`}
+            style={`order:${index + 1};`}
             on:click={() => toggleFlip(image)}
             on:mousemove={handleMouseMove}
             on:mouseleave={handleMouseLeave}
         >
             <img
-                src={image.image}
+                use:lazyLoad={{
+                    src: image.image,
+                    placeholder: image.placeholder,
+                }}
                 alt={`Page ${index + 1}`}
                 draggable="false"
             />
