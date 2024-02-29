@@ -126,97 +126,115 @@
 </div>
 
 <div class="gallery">
-    <div
-        class="text-center"
-        style:order={parted
-            ? Math.floor(images.length / 2) + 1
-            : images.length + 1}
-    >
-        {#if parted}
-            <p class="text" in:fade={{ duration: 500 }}>
-                Current governance structures are broken. In a country, a
-                politician will run on the policies that are most likely to get
-                him re-elected, not the ones that are truly best for the people
-                he represents. In a company, a manager has little incentive to
-                bet on moonshot product lines that could 10x the value of the
-                company, if it also means he could lose his job. In a DAO,
-                getting people to vote is hard and direct democracy makes for
-                mediocre products. They have been a failure in crypto for the
-                most part. Often, what works best is having a benevolent
-                dictator in charge, where one person makes the final decision,
-                as in many founder-led startups and open source projects. The
-                risk here is that the organization rests on the shoulders of a
-                single person. If the person loses their mind, it's hard for the
-                organization to succeed. Enter Futarchy Markets do a much better
-                job than humans at getting to the most accurate information.
-                Information is decentralized. No expert can hold that much
-                information in his head. It's dispersed across the brains of
-                millions of humans and markets are the mechanism through which
-                that information can be gathered and communicated in one place.
-                This was Friedrich Hayek's brilliant insight. We have proof that
-                markets work in practice, not just theory. Orange futures
-                predict the weather better than forecasters. The Iowa Electronic
-                markets predict the US Presidential elections winner better than
-                polls or political analysts. And Wall Street traders predicted
-                who would be held responsible for the Challenger explosion four
-                months before a presidential committee did. Markets applied to
-                organizations is called futarchy, an idea invented by Robin
-                Hanson in 2000. You can apply market-led governance in anything
-                from small groups of people to public companies and governments.
-                You just need an agreed upon desired outcome and a metric that
-                represents that outcome. An example would be wealth and GDP for
-                countries. I'll use an experimental new project called Meta-DAO
-                to show how decision markets work. MetaDAO's goal is to increase
-                the value of the project. A investment fund comes along and puts
-                up a proposal to acquire $10,000 worth of the native token,
-                $META. Alongside the capital, the fund offers MetaDAO
-                legitimacy, attracting more attention to the project. The
-                proposal gains enough traction and a market is created. There
-                are two options: pass or fail. Market participants have five
-                days to trade to signal their decision whether the fund adds
-                enough value to the project to warrant a sweetheart deal on the
-                tokens. At the expire date, the average price across all days is
-                taken. If the pass market is greater than 5 percent of the fail
-                market, the proposal passes. Otherwise it fails. Why now Before
-                a technology is widely adopted, the idea has been around for a
-                long time and it has been tried many times before. Before there
-                was Instacart, there was WebVan. So you have to ask, why
-                futarchy now and why MetaDAO? Past experiments of futarchy have
-                failed because the organization in question didn't start out
-                using markets to make decisions. If you don't start out with
-                markets you are at the mercy of asking humans to act against
-                their own interests. Hanson uses the example of deadlines. Take
-                a manager whose job it is to ship some piece of software on
-                time. If he adds a market to have everyone vote on whether the
-                software will ship on time and the market concludes no, he'll
-                have time to figure out what needs to happen to make sure the
-                team meets the deadline. If he still fails to meet the deadline,
-                he'll have no one to blame. There was nothing that came out of
-                left field. Decision markets make managers look bad. MetaDAO on
-                the otherhand, started making decisions almost right from the
-                outset. It launched on November 8, 2023. After one week, it
-                decentralized. All big decisions from then on would be made
-                using markets. There is no team or foundation token allocation.
-                10,000 $META were distributed to early participants with the
-                remainder going to the DAO's treasury. It's founded by an
-                anonymous character named Prophet and has managed to attract a
-                group of talented free thinkers. Unlike most crypto projects, it
-                plans to create products that generate cash flow. An example of
-                one is a futarchy-as-a-service software product for other DAOs
-                to easily adopt its same governance structure. How to
-                participate With crypto projects, people often think that you
-                have to code to drive the most value. In reality, marketing is
-                just as important as product. If users don't hear about your
-                project, it's as if it didn't exist. Great marketing is the
-                ability to tell a project's story: what it is and where it's
-                going. This can be written content, videos, tweets, even art. If
-                you're not a storyteller, you can trade, code, design, scheme,
-                make deals happen. There's something you're especially suited
-                for, anon. — Thanks to Isaac Yonemoto for reading drafts and
-                giving feedback. E
+    {#if parted}
+        <div
+            in:fade={{ duration: 500 }}
+            class="text-center"
+            style:order={parted
+                ? Math.floor(images.length / 2) + 1
+                : images.length + 1}
+        >
+            <h2>Futarchy: A New Dawn of Decision Making</h2>
+            <p>
+                First, there was autocracy. Those in power ruled selfishly to
+                better their own interests, leaving their subjects helpless with
+                no ability to enact any change. The ruling class faced zero
+                accountability for the impact of their decisions on society.
+                Then, there was democracy. For the first time, all members of
+                society were empowered and granted an equal share in the
+                steering of civilization. Yet the arrow of progress went in
+                strange, confusing directions, and everyone held complaints
+                about how so much low-hanging fruit was left unpicked. Why were
+                the decisions being made so stupid? And so the empowered once
+                again became the powerless, subject to a blackboxed emergent
+                process that made decisions at random. They gave up and stopped
+                even trying. Maybe the king was gone, but the tragedy of the
+                commons was now the unofficial one. What difference would one
+                vote make? Crypto foolishly copied this pattern, implementing a
+                system of coin voting even more inefficient than democracy.
             </p>
-        {/if}
-    </div>
+
+            <p>
+                In the distance, hope looms: futarchy. What if instead of just
+                static votes, people could provide input with a sliding scale
+                indicating how confident they were and how important they
+                thought something was? Under futarchy, members of society can
+                bet on their beliefs by betting on what they think certain
+                decisions will lead to. Speculative markets powerfully harness
+                the wisdom of society rather than leaving the bulk of it
+                untouched. , Thus, serving as a nexus of all available
+                information and accurately weighing people’s opinions by their
+                profits?how informed they are. People have skin in the game
+                Under futarchy, there are strong incentives to actually predict
+                the future what is going to happen rather than succumbing to
+                biases or bad priors--incentives aligned with the betterment of
+                society. Under futarchy, there is individual accountability:
+                individuals stake their own money on what outcomes will be good,
+                and so the tragedy of the commons is defeated. Under futarchy,
+                there is no dumb decision-making blackbox; it is a highly
+                intelligent egregore fusing together the minds of every member
+                of society. Under futarchy, there is hope.
+            </p>
+
+            <h3>Betting: A Tax on Bullshit</h3>
+            <p>
+                Betting is a tax on bullshit. Who would you trust more:
+                political prediction markets with millions of dollars wagered on
+                who will win the next election, or the political pundit spinning
+                up a narrative on his talk show to the pleasure of his who knows
+                his targeted political audience -and will willing to liesay
+                whatever he can to keep their attention? Markets consistently
+                beat polling and pundits because the bid-ask midpoint of a
+                market is a forecast accurately weighing opinions by conviction
+                and value. And over time, they become even smarter. because Tthe
+                bullshitters lose their money asand the sharps fight to price
+                the market as accurately as possible. The incentives of betting
+                are great: the biases and narratives you might believe in
+                disappear when you’re confronted with the task of betting real
+                money on what you think will actually happen. Prediction markets
+                are good proxies because the value of a share is directly pegged
+                to the likelihood of an event. Decision markets under futarchy
+                work because they’re pegged to the value of the token
+                conditional on a policy change. Just like the incentives of
+                betting, futarchy works because the better you are at judging
+                the impact of policy changes whether policy changes will be
+                good, the more money you make, leading you to have more sway and
+                then the more control you have over future decisions.
+                Furthermore, And when you’re betting real money, you can no
+                longer get away with just having vague thoughts about whether
+                something will be good or bad–you probably wouldn’t want to
+                stake real money on opinions like that anyways. Futarchy
+                replaces “idk I think Xxyz will maybe be good” with “conditional
+                on Xxyz happening, I think my tokens will go up 65% in value”.
+            </p>
+
+            <h3>
+                individual accountability > tragedy of the commons in coin
+                voting
+            </h3>
+            <p>
+                Under futarchy, anyone involved in governance faces immediate
+                accountability. Not only will policy changes affect the value of
+                the tokens they hold, like they normally do, but they will also
+                immediately win or lose money after a proposal passes. The
+                feedback loop is tighter.
+            </p>
+
+            <h3>Accountability and Impact</h3>
+            <p>
+                Futarchy fosters immediate accountability and tightens the
+                feedback loop in governance. It promises a system where
+                individual accountability trumps the tragedy of the commons, and
+                informed decisions shape the future.
+            </p>
+
+            <p>
+                As we stand on the brink of adopting futarchy, it's clear: the
+                path forward is not through louder voices or more votes, but
+                through smarter, more informed decisions that benefit all.
+            </p>
+        </div>
+    {/if}
     {#each images as image, index (image.id)}
         <div
             class={`image-card ${image.flipped ? "flipped" : ""} ${parted ? "parted" : ""}`}
@@ -325,9 +343,22 @@
         max-width: 500px; /* The text should span the entire width of the gallery */
         height: 100%; /* The text should span the entire height of the gallery, if needed */
         /* display: flex; */
+        font-size: 25px; /* Increases the base font size */
+
         justify-content: center;
         align-items: center;
         pointer-events: none; /* This ensures clicks pass through to elements below */
+        color: antiquewhite; /* Makes text color white */
+    }
+
+    .text-center h2,
+    .text-center h3 {
+        font-size: 30px; /* Larger font size for headings */
+        margin-top: 20px; /* Adds spacing above headings */
+    }
+
+    .text-center p {
+        margin-top: 10px; /* Adds spacing above paragraphs */
     }
 
     .text {
