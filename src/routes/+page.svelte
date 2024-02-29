@@ -228,7 +228,7 @@
             <img
                 class="img"
                 use:lazyLoad={{
-                    src: image.image,
+                    src: image.placeholder,
                     placeholder: image.placeholder,
                 }}
                 draggable="false"
@@ -294,8 +294,12 @@
         align-items: center; /* Align the image vertically within the card */
         margin: 0.5rem; /* Half of the gap on all sides */
         max-width: 517px;
-        width: 517px;
-        height: 640px;
+        width: 100%; /* Scale width on smaller screens */
+
+        max-height: 640px;
+        height: auto; /* Adjust height automatically to maintain aspect ratio */
+        aspect-ratio: 517 / 640; /* Maintain aspect ratio based on your max dimensions */
+
         object-fit: cover;
     }
 
