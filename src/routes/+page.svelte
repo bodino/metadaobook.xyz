@@ -156,36 +156,48 @@
                 access to the steering wheel of civilization. Yet the wheel
                 seemed to turn in random, stupid directions. A million coin
                 voters cried out at once, finally free to speak up with their
-                voice–and all anyone could hear was noise. Those who couldn’t
-                yell loud enough–those without enough coins–were the first to
-                give up, realizing their votes meant nothing on the margin.
-                Society fell to the tragedy of the commons. What could possibly
-                affect society enough to affect me? became an unspoken mind
-                virus. Sometimes they voted carelessly, sometimes they didn’t
-                vote at all.<br />The empowered once again became the powerless.
-                Those same dissenters who yearned for a purer cyberspace set
-                out, hopeless, and they have been stateless since.
+                voice–and all anyone could hear was noise.
+            </p>
+            <p>
+                Those who couldn’t yell loud enough–those without enough
+                coins–were the first to give up, realizing their votes meant
+                nothing on the margin. Society fell to the tragedy of the
+                commons. What could possibly affect society enough to affect me?
+                became an unspoken mind virus. Sometimes they voted carelessly,
+                sometimes they didn’t vote at all.
+            </p>
+            <p>
+                The empowered once again became the powerless. Those same
+                dissenters who yearned for a purer cyberspace set out, hopeless,
+                and they have been stateless since.
             </p>
 
             <h3>~Futarchy~ Let there be light markets</h3>
             <p>
                 But now, for the first time in memory, there is hope once again:
-                futarchy. Imagine a democracy built on top of markets. Votes
-                become bets, and bets express predictions about two divergent
-                future worlds: one where a policy is implemented, one where it
-                isn’t. Betting gives people skin in the game. Keeping them
-                individually accountable where they might otherwise dismiss
-                decisions due to not being directly affected. Markets mean
-                everyone is listened to at the volume they speak at. Crucially,
-                futarchic markets must be explicitly tethered to the real world
-                so they accurately reflect what they’re trying to measure.
-                Meta-DAO’s implementation is centered around the price of $META
-                conditional on a proposal passing or failing, in the form of
-                conditional tokens: pMeta and fMeta. The time-weighted average
-                prices (TWAPs) in the two corresponding conditional orderbooks
-                extract invaluable insights from the market. If the Pass TWAP
-                exceeds the Fail’s by 5%, traders have conviction that $META
-                will be more valuable in worlds where the proposal passes.
+                futarchy.
+            </p>
+            <p>
+                Imagine a democracy built on top of markets. Votes become bets,
+                and bets express predictions about two divergent future worlds:
+                one where a policy is implemented, one where it isn’t. Betting
+                gives people skin in the game. Keeping them individually
+                accountable where they might otherwise dismiss decisions due to
+                not being directly affected. Markets mean everyone is listened
+                to at the volume they speak at.
+            </p>
+            <p>
+                Crucially, futarchic markets must be explicitly tethered to the
+                real world so they accurately reflect what they’re trying to
+                measure. Meta-DAO’s implementation is centered around the price
+                of $META conditional on a proposal passing or failing, in the
+                form of conditional tokens: pMeta and fMeta. The time-weighted
+                average prices (TWAPs) in the two corresponding conditional
+                orderbooks extract invaluable insights from the market. If the
+                Pass TWAP exceeds the Fail’s by 5%, traders have conviction that
+                $META will be more valuable in worlds where the proposal passes.
+            </p>
+            <p>
                 Futarchy wins. Markets powerfully harness the wisdom of the
                 crowds by effectively synthesizing the perspectives and
                 knowledge of the masses, rewarding truth-seeking, and giving
@@ -197,37 +209,49 @@
                 Futarchy is the best we can do short of figuring out
                 omniscience. Millions of people equals millions of opinions and
                 insights–a ton of them are extremely valuable, but even more are
-                actively a waste of time to listen to. Governance requires
-                listening to the people, but they’ll just give up even if they
-                think they have a lot to contribute if it’s a waste of time for
-                them to participate. With markets, people are rewarded even more
-                if they are right when others are wrong. First, they’ll decide
-                for themselves how valuable they think their opinions are–and
-                over time, as they win or lose money, the market will tell them
-                whether or not they are right. Dumb bettors will pay the
-                bullshit tax and slowly lose all their money as it flows to
-                sharps who seek the truth rather than what they want to be true.
-                The market recursively self-improves and becomes more and more
-                attuned to reality.
+                actively a waste of time to listen to.
+            </p>
+            <p>
+                Governance requires listening to the people, but they’ll just
+                give up even if they think they have a lot to contribute if it’s
+                a waste of time for them to participate. With markets, people
+                are rewarded even more if they are right when others are wrong.
+                First, they’ll decide for themselves how valuable they think
+                their opinions are–and over time, as they win or lose money, the
+                market will tell them whether or not they are right.
+            </p>
+            <p>
+                Dumb bettors will pay the bullshit tax and slowly lose all their
+                money as it flows to sharps who seek the truth rather than what
+                they want to be true. The market recursively self-improves and
+                becomes more and more attuned to reality.
             </p>
 
             <h3>Betting is a tax on bullshit</h3>
             <p>
-                Futarchy is the best we can do short of figuring out
-                omniscience. Millions of people equals millions of opinions and
-                insights–a ton of them are extremely valuable, but even more are
-                actively a waste of time to listen to. Governance requires
-                listening to the people, but they’ll just give up even if they
-                think they have a lot to contribute if it’s a waste of time for
-                them to participate. With markets, people are rewarded even more
-                if they are right when others are wrong. First, they’ll decide
-                for themselves how valuable they think their opinions are–and
-                over time, as they win or lose money, the market will tell them
-                whether or not they are right. Dumb bettors will pay the
-                bullshit tax and slowly lose all their money as it flows to
-                sharps who seek the truth rather than what they want to be true.
-                The market recursively self-improves and becomes more and more
-                attuned to reality.
+                Major elections are coming up this year. What would you trust
+                more: a narrative fine-tuned by a pundit to get as much
+                attention as possible, or the pricing of a political prediction
+                market with millions of dollars wagered?
+            </p>
+            <p>
+                The pundit makes money if he gets views; he doesn’t need to be
+                right. The bettors in the market only care about being right.
+                Show the pundit the market and he’ll be exposed as a bullshitter
+                when he refuses to bet on the things he claims to be certain
+                about even at longshot odds.
+            </p>
+            <p>
+                Futarchy revolves around this same idea. Traders who are good at
+                judging whether policies will be good or bad make more money,
+                while those who suck gradually let go of the reins of
+                society–whether because they realize they’re just bad at
+                predicting or because they lose all their money.
+            </p>
+            <p>
+                Crucially, they care a lot about being right when they have
+                money on the line, and this means they have to think hard about
+                whether policy changes will be good or bad.
             </p>
 
             <h3>Skin in the game</h3>
