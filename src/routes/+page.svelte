@@ -136,20 +136,14 @@
         >
             <h3>~Autocracy~ First, the people had no voice</h3>
             <p>
-                The dissenters built democracy. They empowered all members of
-                society with a voice. For the first time, everyone held equal
-                access to the steering wheel of civilization. Yet the wheel
-                seemed to turn in random, stupid directions. A million coin
-                voters cried out at once, finally free to speak up with their
-                voice–and all anyone could hear was noise. Those who couldn’t
-                yell loud enough–those without enough coins–were the first to
-                give up, realizing their votes meant nothing on the margin.
-                Society fell to the tragedy of the commons. What could possibly
-                affect society enough to affect me? became an unspoken mind
-                virus. Sometimes they voted carelessly, sometimes they didn’t
-                vote at all. The empowered once again became the powerless.
-                Those same dissenters who yearned for a purer cyberspace set
-                out, hopeless, and they have been stateless since.
+                Autocracy meant those in power ruled selfishly to further their
+                own interests, leaving their subjects helpless with no ability
+                to enact any change. The ruling class faced zero accountability
+                for the impact of their decisions on society. Multisigs ruled
+                the world. A circle of 8 royals held all the power. If 5 agreed,
+                the law was changed. Still, today, they rule much of
+                cyberspace–but the dissenters who yearned for freedom left and
+                started anew.
             </p>
 
             <h3>
@@ -168,7 +162,7 @@
                 Society fell to the tragedy of the commons. What could possibly
                 affect society enough to affect me? became an unspoken mind
                 virus. Sometimes they voted carelessly, sometimes they didn’t
-                vote at all. The empowered once again became the powerless.
+                vote at all.<br />The empowered once again became the powerless.
                 Those same dissenters who yearned for a purer cyberspace set
                 out, hopeless, and they have been stateless since.
             </p>
