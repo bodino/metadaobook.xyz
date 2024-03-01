@@ -387,7 +387,7 @@
         max-width: 500px; /* The text should span the entire width of the gallery */
         height: 100%; /* The text should span the entire height of the gallery, if needed */
         /* display: flex; */
-        font-size: 25px; /* Increases the base font size */
+        font-size: 35px; /* Increases the base font size */
 
         justify-content: center;
         align-items: center;
@@ -395,12 +395,16 @@
     }
 
     .text-center h2 {
-        font-size: 34px; /* Adjusted font size for h2 */
+        font-size: 40px; /* Adjusted font size for h2 */
         margin-top: 20px; /* Keeps spacing above headings */
     }
 
+    p {
+        line-height: 50px;
+    }
+
     .text-center h3 {
-        font-size: 30px; /* Smaller font size for h3 */
+        font-size: 50px; /* Smaller font size for h3 */
         margin-top: 20px; /* Keeps spacing above headings */
         font-style: italic; /* Italics for h3 */
     }
