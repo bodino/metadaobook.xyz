@@ -111,7 +111,7 @@
 </script>
 
 <header class="site-title">
-    Meta-DAO Book
+    MetaDAO Book
     <button
         on:click={toggleParting}
         class:toggled={parted}
@@ -185,7 +185,7 @@
             <p>
                 Crucially, futarchic markets must be explicitly tethered to the
                 real world so they accurately reflect what they’re trying to
-                measure. Meta-DAO’s implementation is centered around the price
+                measure. MetaDAO’s implementation is centered around the price
                 of $META conditional on a proposal passing or failing, in the
                 form of conditional tokens: pMeta and fMeta. The time-weighted
                 average prices (TWAPs) in the two corresponding conditional
@@ -264,11 +264,11 @@
 
             <h3>The people are God. They speak to us through the markets</h3>
             <p>
-                Today there exists Meta-DAO, an organization which has no bosses
+                Today there exists MetaDAO, an organization which has no bosses
                 or corporate hierarchies. It exists in the truest form of
                 futarchy. It is but a nascent child. But all things start small,
                 before they appear to us as the institutions which are o so
-                important. Meta-DAO is experimenting on the most important part
+                important. MetaDAO is experimenting on the most important part
                 of society: coordination. For that alone its existence is
                 justified. It is a potential future, where we work together
                 better and in a more fair manner.
