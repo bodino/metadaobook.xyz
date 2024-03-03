@@ -111,7 +111,7 @@
 </script>
 
 <header class="site-title">
-    MetaDAO Book
+    Meta-DAO Book
     <button
         on:click={toggleParting}
         class:toggled={parted}
@@ -120,10 +120,6 @@
         {parted ? "Close the Curtains" : "See the light"}
     </button>
 </header>
-
-<div class="viewing-experience-message">
-    For the best viewing experience, please use a larger screen.
-</div>
 
 <div class="gallery">
     {#if parted}
@@ -172,7 +168,7 @@
                 and they have been stateless since.
             </p>
 
-            <h3>~Futarchy~ Let there be <s>light</s> markets</h3>
+            <h3>~Futarchy~ Let there be light markets</h3>
             <p>
                 But now, for the first time in memory, there is hope once again:
                 futarchy.
@@ -189,7 +185,7 @@
             <p>
                 Crucially, futarchic markets must be explicitly tethered to the
                 real world so they accurately reflect what they’re trying to
-                measure. MetaDAO’s implementation is centered around the price
+                measure. Meta-DAO’s implementation is centered around the price
                 of $META conditional on a proposal passing or failing, in the
                 form of conditional tokens: pMeta and fMeta. The time-weighted
                 average prices (TWAPs) in the two corresponding conditional
@@ -268,11 +264,11 @@
 
             <h3>The people are God. They speak to us through the markets</h3>
             <p>
-                Today there exists MetaDAO, an organization which has no bosses
+                Today there exists Meta-DAO, an organization which has no bosses
                 or corporate hierarchies. It exists in the truest form of
                 futarchy. It is but a nascent child. But all things start small,
                 before they appear to us as the institutions which are o so
-                important. MetaDAO is experimenting on the most important part
+                important. Meta-DAO is experimenting on the most important part
                 of society: coordination. For that alone its existence is
                 justified. It is a potential future, where we work together
                 better and in a more fair manner.
@@ -333,14 +329,15 @@
 
     .gallery {
         display: flex;
-        overflow-x: hidden; /* Hide horizontal overflow */
-        max-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto; /* Adjusts to allow vertical scrolling */
+        scrollbar-width: none; /* Hides scrollbars in Firefox */
+
         flex-wrap: wrap;
         justify-content: center; /* Centers items in the main axis */
         gap: 1rem; /* Constant gap between items */
         position: relative;
         padding-top: 100px;
-        /* scrollbar-width: none; */
         max-width: 1600px; /* Maximum width of the gallery */
         margin-left: auto; /* Centers the gallery horizontally */
         margin-right: auto; /* Centers the gallery horizontally */
@@ -362,8 +359,9 @@
         max-height: 640px;
         height: auto; /* Adjust height automatically to maintain aspect ratio */
         aspect-ratio: 517 / 640; /* Maintain aspect ratio based on your max dimensions */
-
         object-fit: cover;
+        overflow-y: hidden; /* Allows scrolling within this element */
+        overflow-x: hidden;
     }
 
     .image-card:hover {
@@ -385,20 +383,15 @@
         transition: order 2s ease;
         position: absolute; /* Absolute position for the text */
         margin-top: 40px;
+        max-height: 100%; /* Adjust based on your layout */
+        overflow-y: visible; /* Allows scrolling within this element */
         max-width: 500px; /* The text should span the entire width of the gallery */
-        height: 100%; /* The text should span the entire height of the gallery, if needed */
         /* display: flex; */
         font-size: 30px; /* Increases the base font size */
 
         justify-content: center;
         align-items: center;
         color: #faf4eb; /* Makes text color white */
-    }
-
-    .gallery::-webkit-scrollbar {
-        scrollbar-width: none; /* Hides scrollbars in Firefox */
-
-        display: none;
     }
 
     .text-center h2 {
@@ -531,42 +524,13 @@
         color: #fff; /* Adjust text color as needed */
     }
 
-    .viewing-experience-message {
-        display: none; /* Hide by default */
-        text-align: center;
-        padding: 1rem;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: white;
-        border-radius: 5px;
-        font-size: 1rem;
-        position: fixed; /* Position the message fixed on the screen */
-        top: 100px; /* Distance from the bottom of the viewport */
-        left: 50%; /* Center the message horizontally */
-        transform: translateX(
-            -50%
-        ); /* Adjust horizontal positioning to truly center */
-        width: calc(
-            100% - 40px
-        ); /* Ensure it doesn't stretch beyond viewport width, considering padding */
-        max-width: 500px; /* Maximum width of the message */
-        z-index: 1000; /* Ensure it's above other content */
-    }
-
     /* This media query applies styles when the window width is less than 1100 pixels */
     @media (max-width: 1099px) {
         .improved-part-button {
             display: none; /* Hides the button */
         }
-        .viewing-experience-message {
-            /* display: block; /* Show only when window width is under 1099px */
-        }
-
         .site-title {
             justify-content: center;
         }
-    }
-
-    .image-card.flipped {
-        /* transform: rotateY(180deg); */
     }
 </style>
