@@ -333,7 +333,8 @@
 
     .gallery {
         display: flex;
-        overflow: hidden; /* This will cut off any part of the content that exceeds the gallery bounds */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        overflow-y: auto; /* Allow vertical overflow */
 
         flex-wrap: wrap;
         justify-content: center; /* Centers items in the main axis */
