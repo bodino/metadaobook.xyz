@@ -334,13 +334,13 @@
     .gallery {
         display: flex;
         overflow-x: hidden; /* Hide horizontal overflow */
-        overflow-y: auto; /* Allow vertical overflow */
-
+        max-height: 100%;
         flex-wrap: wrap;
         justify-content: center; /* Centers items in the main axis */
         gap: 1rem; /* Constant gap between items */
         position: relative;
         padding-top: 100px;
+        /* scrollbar-width: none; */
         max-width: 1600px; /* Maximum width of the gallery */
         margin-left: auto; /* Centers the gallery horizontally */
         margin-right: auto; /* Centers the gallery horizontally */
@@ -393,6 +393,12 @@
         justify-content: center;
         align-items: center;
         color: #faf4eb; /* Makes text color white */
+    }
+
+    .gallery::-webkit-scrollbar {
+        scrollbar-width: none; /* Hides scrollbars in Firefox */
+
+        display: none;
     }
 
     .text-center h2 {

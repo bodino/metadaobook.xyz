@@ -2,7 +2,14 @@ body {
     background-color: #201f23;
 }
 
+/* For Firefox */
+html,
+body {
+    scrollbar-width: none; /* This is the correct way to hide scrollbars in Firefox */
+}
+
+/* For Chrome, Safari, and other WebKit-based browsers */
 body::-webkit-scrollbar,
 html::-webkit-scrollbar {
-    display: none;
+    display: none; /* This hides the scrollbar, making it not appear */
 }
