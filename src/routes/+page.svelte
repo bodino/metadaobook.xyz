@@ -168,7 +168,7 @@
                 and they have been stateless since.
             </p>
 
-            <h3>~Futarchy~ Let there be <s>light markets</s></h3>
+            <h3>~Futarchy~ Let there be <s>light</s> markets</h3>
             <p>
                 But now, for the first time in memory, there is hope once again:
                 futarchy.
